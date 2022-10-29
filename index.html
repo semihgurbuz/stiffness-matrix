@@ -26,48 +26,52 @@
           </h3>
         </div>
         <div class="middle">
-          <form action="http://httpbin.org/post" method="post">
+          
             <div class="input-area">
-              <h2>Let's do this !</h2>
+              <h2>Data Required for calculations</h2>
 
               <div class="first-row">
-                <div class="first-name">
-                  <label for="first_name">FIRST NAME</label>
-                  <input type="text" id="first_name" name="first_name" />
+                <div class="startx">
+                  <label for="startx">Start node X</label>
+                  <input type="number" id="startx" name="startx" />
                 </div>
-                <div class="last-name">
-                  <label for="last_name">LAST NAME</label>
-                  <input type="text" id="last_name" name="last_name" />
+                <div class="starty">
+                  <label for="starty">Start node Y</label>
+                  <input type="number" id="starty" name="starty" />
                 </div>
+                <div class="i">
+                    <label for="i">Inertia (mm'4)</label>
+                    <input type="number" id="i" name="i" />
+                  </div>
+                  <div class="e">
+                    <label for="e">Elastic Modulus (GPA)</label>
+                    <input type="number" id="e" name="e" />
+                  </div>
               </div>
               <div class="second-row">
-                <div class="email">
-                  <label for="mail">EMAIL</label>
-                  <input type="email" id="mail" name="mail" />
+                <div class="endx">
+                  <label for="endx">End node X</label>
+                  <input type="number" id="endx" name="endx" />
                 </div>
-                <div class="phone-number">
-                  <label for="phone_number">PHONE NUMBER</label>
-                  <input type="tel" id="phone_number" name="phone_number" />
+                <div class="endy">
+                  <label for="endy">End node Y</label>
+                  <input type="number" id="endy" name="endy" />
                 </div>
-              </div>
-              <div class="third-row">
-                <div class="password1">
-                  <label for="password1">PASSWORD</label>
-                  <input type="password" id="password1" name="password1" />
-                </div>
-                <div class="password2">
-                  <label for="password2">CONFIRM PASSWORD</label>
-                  <input type="password" id="password2" name="password2" />
-                </div>
+                <div class="a">
+                    <label for="a">Area (mm'2)</label>
+                    <input type="number" id="a" name="a" />
+                  </div>
+                  <div class="g">
+                    <label for="g">Shear Modulus (GPA)</label>
+                    <input type="number" id="g" name="g" />
+                  </div>
               </div>
             </div>
-            <button class="btn" type="submit">Create Account</button>
-            <div class="bottom">
-                <p>Already have an account ?</p>
-                <a href="">Log in</a>
+            <div class="button">  
+                <button class="btn" type="button">Compute</button>
+                <button class="btn reset" type="button">Reset</button>
+
             </div>
-            
-          </form>
         </div>
         
           

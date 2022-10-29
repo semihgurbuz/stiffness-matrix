@@ -61,6 +61,12 @@ h3 {
   margin-top: 20px;
   width: 20%;
 }
+.btn:hover {
+  background: #929ca9;
+}
+.button {
+  display: flex;
+}
 
 .bottom {
   padding-left: 50px;
@@ -105,20 +111,23 @@ input:invalid {
 
 .first-row,
 .second-row,
-.third-row {
+.third-row,
+.fourth-row {
   display: flex;
   width: 100%;
   margin-right: 1rem;
 }
 
-.first-name,
-.last-name,
-.phone-number,
-.password2,
-.email,
-.password1 {
-  margin-right: 8rem;
-  width: 25%;
+.startx,
+.endx,
+.starty,
+.endy,
+.e,
+.g,
+.i,
+.a {
+  margin-right: 6rem;
+  width: 10%;
 }
 
 /************************************* LEFT CONTAINER **********************************************************/
