@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+.container {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+/******************************************************** RIGHT CONTAINER **************************************************************/
+
+.right-container {
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+.top {
+  flex: 0 0 100%;
+
+  margin-top: 9rem;
+  margin-bottom: 5rem;
+}
+.title {
+  width: 60%;
+  padding-left: 50px;
+  color: black;
+}
+
+h3 {
+  width: 60%;
+  padding-left: 50px;
+  color: black;
+}
+
+.middle {
+  flex: 1 0 100%;
+}
+
+.input-area {
+  background-color: white;
+  padding-left: 50px;
+}
+
+.btn {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #39464c;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 20%;
+}
+
+.bottom {
+  padding-left: 50px;
+  margin-top: 1rem;
+}
+
+p {
+  display: inline-block;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #596d48;
+  font-weight: bolder;
+}
+
+/******************INPUT AREA***********************/
+h2 {
+  padding-top: 1rem;
+}
+
+label {
+  display: block;
+}
+input {
+  margin-bottom: 2rem;
+  width: 100%;
+  border: 1.5px solid #e5e7eb;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 3px #719ece;
+}
+input:invalid {
+  border-color: red;
+}
+
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.first-name,
+.last-name,
+.phone-number,
+.password2,
+.email,
+.password1 {
+  margin-right: 8rem;
+  width: 25%;
+}
+
+/************************************* LEFT CONTAINER **********************************************************/
+
+.left-container {
+  position: relative;
+  flex: 0 0 40%;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  margin-top: 0;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  display: inline-block;
+}
+
+.odtu {
+  height: 100%;
+  display: inline-block;
+}
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  height: 150px;
+}
