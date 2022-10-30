@@ -19,10 +19,8 @@ let length;
 let cos;
 let sin;
 
-const calcLocal = () => {
+const getLocal = () => {
   length = Math.sqrt((endx - startx) ** 2 + (endy - starty) ** 2);
-  cos = (endx - startx) / length;
-  sin = (endy - starty) / length;
 
   if (document.getElementById("truss").checked) {
     i = 0;
@@ -89,6 +87,36 @@ const calcLocal = () => {
     Math.round(((4 * (e * i)) / length) * 100) / 100;
 };
 
+const getRotation = () => {
+  length = Math.sqrt((endx - startx) ** 2 + (endy - starty) ** 2);
+  cos = (endx - startx) / length;
+  sin = (endy - starty) / length;
+
+  if (document.getElementById("truss").checked) {
+    document.querySelector(".r33").innerHTML = 0;
+    document.querySelector(".r66").innerHTML = 0;
+  } else {
+    document.querySelector(".r33").innerHTML = 1;
+    document.querySelector(".r66").innerHTML = 1;
+  }
+
+  document.querySelector(".r11").innerHTML = parseFloat(cos);
+
+  document.querySelector(".r12").innerHTML = parseFloat(sin);
+
+  document.querySelector(".r21").innerHTML = parseFloat(-sin);
+
+  document.querySelector(".r22").innerHTML = parseFloat(cos);
+
+  document.querySelector(".r44").innerHTML = parseFloat(cos);
+
+  document.querySelector(".r45").innerHTML = parseFloat(sin);
+
+  document.querySelector(".r54").innerHTML = parseFloat(-sin);
+
+  document.querySelector(".r55").innerHTML = parseFloat(cos);
+};
+
 let compute = document.querySelector(".compute");
 compute.addEventListener("click", () => {
   startx = Number(document.getElementById("startx").value);
@@ -100,7 +128,8 @@ compute.addEventListener("click", () => {
   i = Number(document.getElementById("i").value);
   g = Number(document.getElementById("g").value);
 
-  calcLocal();
+  getLocal();
+  getRotation();
 });
 
 let reset = document.querySelector(".reset");
