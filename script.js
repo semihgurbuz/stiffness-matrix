@@ -117,6 +117,124 @@ const getRotation = () => {
   document.querySelector(".r55").innerHTML = parseFloat(cos);
 };
 
+const getGlobal = () => {
+  length = Math.sqrt((endx - startx) ** 2 + (endy - starty) ** 2);
+  cos = (endx - startx) / length;
+  sin = (endy - starty) / length;
+
+  if (document.getElementById("truss").checked) {
+    i = 0;
+  }
+
+  document.querySelector(".g11").innerHTML =
+    Math.round(((e * a) / length) * 100) / 100;
+
+  document.querySelector(".g12").innerHTML =
+    Math.round((-(e * a) / length) * 100) / 100;
+
+  document.querySelector(".g13").innerHTML =
+    Math.round(((12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g14").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g15").innerHTML =
+    Math.round(((-12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g16").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g21").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g22").innerHTML =
+    Math.round(((4 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g23").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g24").innerHTML =
+    Math.round(((2 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g25").innerHTML =
+    Math.round((-(e * a) / length) * 100) / 100;
+
+  document.querySelector(".g26").innerHTML =
+    Math.round(((e * a) / length) * 100) / 100;
+
+  document.querySelector(".g31").innerHTML =
+    Math.round(((-12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g32").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g33").innerHTML =
+    Math.round(((12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g34").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g35").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g36").innerHTML =
+    Math.round(((2 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g41").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g42").innerHTML =
+    Math.round(((4 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g43").innerHTML =
+    Math.round(((12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g44").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g45").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g46").innerHTML =
+    Math.round(((2 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g51").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g52").innerHTML =
+    Math.round(((4 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g53").innerHTML =
+    Math.round(((12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g54").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g55").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g56").innerHTML =
+    Math.round(((2 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g61").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g62").innerHTML =
+    Math.round(((4 * (e * i)) / length) * 100) / 100;
+
+  document.querySelector(".g63").innerHTML =
+    Math.round(((12 * (e * i)) / length ** 3) * 100) / 100;
+
+  document.querySelector(".g64").innerHTML =
+    Math.round(((-6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g65").innerHTML =
+    Math.round(((6 * (e * i)) / length ** 2) * 100) / 100;
+
+  document.querySelector(".g66").innerHTML =
+    Math.round(((2 * (e * i)) / length) * 100) / 100;
+};
+
 let compute = document.querySelector(".compute");
 compute.addEventListener("click", () => {
   startx = Number(document.getElementById("startx").value);
@@ -130,6 +248,7 @@ compute.addEventListener("click", () => {
 
   getLocal();
   getRotation();
+  getGlobal();
 });
 
 let reset = document.querySelector(".reset");
