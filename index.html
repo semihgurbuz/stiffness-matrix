@@ -65,8 +65,12 @@
             </div>
           </div>
           <div class="button">
-            <button class="btn" type="button">Compute</button>
+            <button class="btn compute" type="button">Compute</button>
             <button class="btn reset" type="button">Reset</button>
+            <div>
+              <h2 class="truss">Truss ?</h2>
+              <input type="checkbox" name="truss" id="truss" />
+            </div>
           </div>
         </div>
         <div class="bottom">
@@ -86,57 +90,57 @@
                   </tr>
                   <tr>
                     <th>D1</th>
-                    <td title="[1,1]">0</td>
+                    <td class="l11" title="[1,1]">0</td>
                     <td title="[1,2]">0</td>
                     <td title="[1,3]">0</td>
-                    <td title="[1,4]">0</td>
+                    <td class="l14" title="[1,4]">0</td>
                     <td title="[1,5]">0</td>
                     <td title="[1,6]">0</td>
                   </tr>
                   <tr>
                     <th>D2</th>
                     <td title="[2,1]">0</td>
-                    <td title="[2,2]">0</td>
-                    <td title="[2,3]">0</td>
+                    <td class="l22" title="[2,2]">0</td>
+                    <td class="l23" title="[2,3]">0</td>
                     <td title="[2,4]">0</td>
-                    <td title="[2,5]">0</td>
-                    <td title="[2,6]">0</td>
+                    <td class="l25" title="[2,5]">0</td>
+                    <td class="l26" title="[2,6]">0</td>
                   </tr>
                   <tr>
                     <th>D3</th>
                     <td title="[3,1]">0</td>
-                    <td title="[3,2]">0</td>
-                    <td title="[3,3]">0</td>
+                    <td class="l32" title="[3,2]">0</td>
+                    <td class="l33" title="[3,3]">0</td>
                     <td title="[3,4]">0</td>
-                    <td title="[3,5]">0</td>
-                    <td title="[3,6]">0</td>
+                    <td class="l35" title="[3,5]">0</td>
+                    <td class="l36" title="[3,6]">0</td>
                   </tr>
                   <tr>
                     <th>D4</th>
-                    <td title="[4,1]">0</td>
+                    <td class="l41" title="[4,1]">0</td>
                     <td title="[4,2]">0</td>
                     <td title="[4,3]">0</td>
-                    <td title="[4,4]">0</td>
+                    <td class="l44" title="[4,4]">0</td>
                     <td title="[4,5]">0</td>
                     <td title="[4,6]">0</td>
                   </tr>
                   <tr>
                     <th>D5</th>
                     <td title="[5,1]">0</td>
-                    <td title="[5,2]">0</td>
-                    <td title="[5,3]">0</td>
+                    <td class="l52" title="[5,2]">0</td>
+                    <td class="l53" title="[5,3]">0</td>
                     <td title="[5,4]">0</td>
-                    <td title="[5,5]">0</td>
-                    <td title="[5,6]">0</td>
+                    <td class="l55" title="[5,5]">0</td>
+                    <td class="l56" title="[5,6]">0</td>
                   </tr>
                   <tr>
                     <th>D6</th>
                     <td title="[6,1]">0</td>
-                    <td title="[6,2]">0</td>
-                    <td title="[6,3]">0</td>
+                    <td class="l62" title="[6,2]">0</td>
+                    <td class="l63" title="[6,3]">0</td>
                     <td title="[6,4]">0</td>
-                    <td title="[6,5]">0</td>
-                    <td title="[6,6]">0</td>
+                    <td class="l65" title="[6,5]">0</td>
+                    <td class="l66" title="[6,6]">0</td>
                   </tr>
                 </tbody>
               </table>
@@ -149,17 +153,17 @@
                 <tbody>
                   <tr>
                     <th></th>
-                    <th>1</span></th>
-                    <th>2</span></th>
-                    <th>3</span></th>
-                    <th>4</span></th>
-                    <th>5</span></th>
-                    <th>6</span></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
                   </tr>
                   <tr>
                     <th>1</th>
-                    <td title="[1,1]">0</td>
-                    <td title="[1,2]">0</td>
+                    <td class="r11" title="[1,1]">0</td>
+                    <td class="r12" title="[1,2]">0</td>
                     <td title="[1,3]">0</td>
                     <td title="[1,4]">0</td>
                     <td title="[1,5]">0</td>
@@ -167,8 +171,8 @@
                   </tr>
                   <tr>
                     <th>2</th>
-                    <td title="[2,1]">0</td>
-                    <td title="[2,2]">0</td>
+                    <td class="r21" title="[2,1]">0</td>
+                    <td class="r22" title="[2,2]">0</td>
                     <td title="[2,3]">0</td>
                     <td title="[2,4]">0</td>
                     <td title="[2,5]">0</td>
@@ -178,7 +182,7 @@
                     <th>3</th>
                     <td title="[3,1]">0</td>
                     <td title="[3,2]">0</td>
-                    <td title="[3,3]">0</td>
+                    <td title="[3,3]">1</td>
                     <td title="[3,4]">0</td>
                     <td title="[3,5]">0</td>
                     <td title="[3,6]">0</td>
@@ -188,8 +192,8 @@
                     <td title="[4,1]">0</td>
                     <td title="[4,2]">0</td>
                     <td title="[4,3]">0</td>
-                    <td title="[4,4]">0</td>
-                    <td title="[4,5]">0</td>
+                    <td class="r44" title="[4,4]">0</td>
+                    <td class="r45" title="[4,5]">0</td>
                     <td title="[4,6]">0</td>
                   </tr>
                   <tr>
@@ -197,8 +201,8 @@
                     <td title="[5,1]">0</td>
                     <td title="[5,2]">0</td>
                     <td title="[5,3]">0</td>
-                    <td title="[5,4]">0</td>
-                    <td title="[5,5]">0</td>
+                    <td class="r54" title="[5,4]">0</td>
+                    <td class="r55" title="[5,5]">0</td>
                     <td title="[5,6]">0</td>
                   </tr>
                   <tr>
@@ -208,7 +212,7 @@
                     <td title="[6,3]">0</td>
                     <td title="[6,4]">0</td>
                     <td title="[6,5]">0</td>
-                    <td title="[6,6]">0</td>
+                    <td title="[6,6]">1</td>
                   </tr>
                 </tbody>
               </table>
@@ -230,57 +234,57 @@
                   </tr>
                   <tr>
                     <th>D1</th>
-                    <td title="[1,1]">0</td>
-                    <td title="[1,2]">0</td>
-                    <td title="[1,3]">0</td>
-                    <td title="[1,4]">0</td>
-                    <td title="[1,5]">0</td>
-                    <td title="[1,6]">0</td>
+                    <td class="g11" title="[1,1]">0</td>
+                    <td class="g12" title="[1,2]">0</td>
+                    <td class="g13" title="[1,3]">0</td>
+                    <td class="g14" title="[1,4]">0</td>
+                    <td class="g15" title="[1,5]">0</td>
+                    <td class="g16" title="[1,6]">0</td>
                   </tr>
                   <tr>
                     <th>D2</th>
-                    <td title="[2,1]">0</td>
-                    <td title="[2,2]">0</td>
-                    <td title="[2,3]">0</td>
-                    <td title="[2,4]">0</td>
-                    <td title="[2,5]">0</td>
-                    <td title="[2,6]">0</td>
+                    <td class="g21" title="[2,1]">0</td>
+                    <td class="g22" title="[2,2]">0</td>
+                    <td class="g23" title="[2,3]">0</td>
+                    <td class="g24" title="[2,4]">0</td>
+                    <td class="g25" title="[2,5]">0</td>
+                    <td class="g26" title="[2,6]">0</td>
                   </tr>
                   <tr>
                     <th>D3</th>
-                    <td title="[3,1]">0</td>
-                    <td title="[3,2]">0</td>
-                    <td title="[3,3]">0</td>
-                    <td title="[3,4]">0</td>
-                    <td title="[3,5]">0</td>
-                    <td title="[3,6]">0</td>
+                    <td class="g31" title="[3,1]">0</td>
+                    <td class="g32" title="[3,2]">0</td>
+                    <td class="g33" title="[3,3]">0</td>
+                    <td class="g34" title="[3,4]">0</td>
+                    <td class="g35" title="[3,5]">0</td>
+                    <td class="g36" title="[3,6]">0</td>
                   </tr>
                   <tr>
                     <th>D4</th>
-                    <td title="[4,1]">0</td>
-                    <td title="[4,2]">0</td>
-                    <td title="[4,3]">0</td>
-                    <td title="[4,4]">0</td>
-                    <td title="[4,5]">0</td>
-                    <td title="[4,6]">0</td>
+                    <td class="g41" title="[4,1]">0</td>
+                    <td class="g42" title="[4,2]">0</td>
+                    <td class="g43" title="[4,3]">0</td>
+                    <td class="g44" title="[4,4]">0</td>
+                    <td class="g45" title="[4,5]">0</td>
+                    <td class="g46" title="[4,6]">0</td>
                   </tr>
                   <tr>
                     <th>D5</th>
-                    <td title="[5,1]">0</td>
-                    <td title="[5,2]">0</td>
-                    <td title="[5,3]">0</td>
-                    <td title="[5,4]">0</td>
-                    <td title="[5,5]">0</td>
-                    <td title="[5,6]">0</td>
+                    <td class="g51" title="[5,1]">0</td>
+                    <td class="g52" title="[5,2]">0</td>
+                    <td class="g53" title="[5,3]">0</td>
+                    <td class="g54" title="[5,4]">0</td>
+                    <td class="g55" title="[5,5]">0</td>
+                    <td class="g56" title="[5,6]">0</td>
                   </tr>
                   <tr>
                     <th>D6</th>
-                    <td title="[6,1]">0</td>
-                    <td title="[6,2]">0</td>
-                    <td title="[6,3]">0</td>
-                    <td title="[6,4]">0</td>
-                    <td title="[6,5]">0</td>
-                    <td title="[6,6]">0</td>
+                    <td class="g61" title="[6,1]">0</td>
+                    <td class="g62" title="[6,2]">0</td>
+                    <td class="g63" title="[6,3]">0</td>
+                    <td class="g64" title="[6,4]">0</td>
+                    <td class="g65" title="[6,5]">0</td>
+                    <td class="g66" title="[6,6]">0</td>
                   </tr>
                 </tbody>
               </table>

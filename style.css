@@ -68,6 +68,15 @@ h3 {
   display: flex;
 }
 
+.truss {
+  margin: 0;
+  margin-left: 2rem;
+}
+#truss {
+  height: 20px;
+  margin: 0;
+}
+
 .bottom {
   padding-left: 50px;
   margin-top: 1rem;
