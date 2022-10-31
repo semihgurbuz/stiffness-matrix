@@ -1,12 +1,3 @@
-// let startx = document.querySelector(".startx");
-// let starty = document.querySelector(".starty");
-// let endx = document.querySelector(".endx");
-// let endy = document.querySelector(".endy");
-// let a = document.querySelector(".a");
-// let e = document.querySelector(".e");
-// let i = document.querySelector(".i");
-// let g = document.querySelector(".g");
-
 let startx;
 let starty;
 let endx;
@@ -263,7 +254,7 @@ const getGlobal = () => {
   ).toFixed(2);
 
   document.querySelector(".g56").innerHTML = parseFloat(
-    (-1 * cos * 6 * i) / length ** 2
+    (-1 * cos * e * 6 * i) / length ** 2
   ).toFixed(2);
 
   document.querySelector(".g61").innerHTML = parseFloat(
@@ -283,7 +274,7 @@ const getGlobal = () => {
   ).toFixed(2);
 
   document.querySelector(".g65").innerHTML = parseFloat(
-    (-1 * cos * 6 * i) / length ** 2
+    (-1 * cos * e * 6 * i) / length ** 2
   ).toFixed(2);
 
   document.querySelector(".g66").innerHTML = parseFloat(
